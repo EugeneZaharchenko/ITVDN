@@ -1,7 +1,7 @@
 {
   "name": "itvdn-landing",
   "version": "1.0.0",
-  "description": "This is langing tutorial for ITVDN students",
+  "description": "Eugene's langing tutorial",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,12 +17,16 @@
   },
   "homepage": "https://github.com/sergeyamator/itvdn-landing#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
+    "browser-sync": "^2.24.7",
     "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-pug": "^3.3.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp.spritesmith": "^6.3.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp.spritesmith": "^6.9.0",
     "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0"
   }
 }

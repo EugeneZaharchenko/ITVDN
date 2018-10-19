@@ -1,0 +1,22 @@
+.nav {
+  display: inline-block;
+  vert-align: top;
+  padding-top: 5px;
+  margin-right: 15px;
+
+    &__link {
+      display: inline-block;
+      vertical-align: top;
+      padding: 10px;
+      font-family: $ff-main-bold;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: #454545;
+      transition: .5s;
+
+    &:hover,
+    &--active {
+      color: #004c54;
+    }
+    }
+}
