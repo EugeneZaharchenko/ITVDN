@@ -15,15 +15,20 @@
     margin-top: 0;
     margin-bottom: 25px;
   }
-}
 
-.button--white {
-  width: 20px;
-  color: #000;
-  background: #fff;
+  .button--text-uppercase {
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 18%;
+    color: #000;
+    background: #f99c22;
 
-  &:hover,
-  &--active {
-    color: #004c54;
+    &:hover,
+    &--active {
+      background: lighten(#f99c22, 20%);
+    }
   }
 }
