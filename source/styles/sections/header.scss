@@ -28,8 +28,10 @@
    -o-transition: 0.4s time;
    transition: 0.4s time;
 
-   &:hover {
-     color: lighten(black, 40%);}
+  &:hover,
+  &--active {
+    color: #004c54;
+  }
 
    &__icon {
      margin-right: 5px;

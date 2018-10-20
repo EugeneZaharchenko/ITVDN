@@ -1,0 +1,29 @@
+.hero {
+  min-height: 65px;
+  padding: 340px 0;
+  text-align: center;
+  color: #fff;
+  background: #ccc url("../../images/growing-seed.jpg") center/cover no-repeat;
+
+  &__about {
+    font-family: $ff-main-bold;
+    font-size: 4rem;
+    line-height: 2;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.button--white {
+  width: 20px;
+  color: #000;
+  background: #fff;
+
+  &:hover,
+  &--active {
+    color: #004c54;
+  }
+}
