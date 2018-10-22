@@ -1,0 +1,17 @@
+.title {
+  margin-bottom: 60px;
+  text-align: center;
+
+    &__header {
+      margin: 20px 0;
+      font-size: 2.5rem;
+      font-family: $ff-main-bold;
+      line-height: 1;
+    }
+
+    &__text {
+      margin: -5px 0 -10px;
+      font-size: 2rem;
+      font-family: $ff-main-light;
+    }
+}

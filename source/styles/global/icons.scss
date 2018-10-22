@@ -1,0 +1,15 @@
+.icon {
+  margin: auto auto 20px auto;}
+
+.icon-like {
+  @include sprite($like);
+}
+
+.icon-shop {
+  @include sprite($shop);
+  margin-bottom: 35px;
+}
+
+.icon-message {
+  @include sprite($message);
+}
