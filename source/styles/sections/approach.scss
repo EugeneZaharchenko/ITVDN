@@ -1,5 +1,5 @@
 .approach {
-  padding: 45px 0 94px;
+  padding: 50px 0 94px;
   background-color: #f3f3f3;
 
   &__list {
@@ -54,7 +54,7 @@
   }
 
   &__step {
-    //@include centerer-y();
+    @include centerer-y();
 
     right: -58px;
     width: 103px;
@@ -80,12 +80,13 @@
 
   &__title {
     margin-bottom: 6px;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     font-family: $ff-main-bold;
   }
 
   &__description {
     margin: 0;
     line-height: 1.5;
+    font-size: 1.1rem;
   }
 }
