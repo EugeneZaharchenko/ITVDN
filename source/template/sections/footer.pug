@@ -1,0 +1,18 @@
+- var linkItems = ['facebook-official', 'twitter', 'google-plus', 'linkedin']
+- var linkUrls = ['facebook.com', 'twitter.com', 'google.com', 'linkedin.com']
+footer.footer
+    .footer__top
+        .container
+            .footer__title Связаться с нами
+            .footer__links
+                each item, key in linkItems
+                    a.footer__social(href="http://" + linkUrls[key] target="_blank")
+                        i(class="fa fa-" + item aria-hidden="true")
+                            span.visually-hidden=linkItems
+            .footer__text Оставьте Ваши данные для скидки при следующем заказе
+            form(action="#" method="post")
+                .footer__field: input.footer__input(type="email" placeholder="Email")
+                button(type="submit").button Участвовать в акциях
+
+    .footer__bottom
+        .footer__copy JWeb.club &copy; 2017

@@ -1,0 +1,20 @@
+section.form-section
+    .container
+        .title
+            h2.title.title__header Landing бесплатно
+            .title__text Введите Ваши данные
+
+        .btn-down: a.arrow-down: i.fa.fa-angle-down
+
+        .form-container.is-hidden
+            form(method="post" action="#").form
+                button(type="button").form__close-button x
+                .form__text.
+                    Оставьте Ваши данные и мы бесплатно сделаем пробную версию Вашего сайта
+
+                .form__fields
+                    input.form__input(type="text" placeholder="Ваше имя")
+                    input.form__input(type="text" placeholder="Контактный номер")
+                    input.form__input(type="text" placeholder="Имя")
+
+                button(type="submit").button.button--text-uppercase.button--red Подать заявку
