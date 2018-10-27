@@ -5,6 +5,21 @@
   &__item {
     width: 33%;
     list-style: none;
+
+    @media (max-width: 1080px) {
+      width: 30%;
+    }
+
+    @media (max-width: 960px) {
+      width: 50%;
+      margin: 0 -25px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 0;
+    }
   }
 
   &__list {
@@ -13,6 +28,10 @@
     flex-wrap: wrap;
     margin: 0 -5%;
     padding: 0;
+
+    @media (max-width: 1080px) {
+      margin: 0 -2%;
+    }
   }
 
   &__header {
@@ -23,6 +42,7 @@
   }
 
   &__description {
+    padding-right: 5px;
     margin-top: 0;
     font-size: 1.2rem;
     color: black;

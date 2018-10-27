@@ -5,16 +5,27 @@
 
 .header {
   &__top {
-    background: #e6e6e6;
+    background: #cecece;
     border-bottom: 1px solid #ccc;
   }
 
   &__bottom {
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     padding: 20px 0 30px;
+  }
+
+  .button {
+    @media (max-width: 1080px) {
+      margin-right: 15px;
+    }
   }
 }
 
@@ -58,4 +69,19 @@
   border-radius: 2px;
   background-color: #1287bf;
   color: #fff;
+}
+
+.logo {
+  @media (max-width: 1080px) {
+    margin-left: 15px;
+  }
+
+  @media (max-width: 1000px) {
+    margin: 0 0 -10px 0;
+  }
+
+  img.logo__pictures {
+    margin: 0 auto;
+    display: flex;
+  }
 }

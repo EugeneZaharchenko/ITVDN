@@ -77,5 +77,9 @@
   &__copy {
     font-size: 0.875rem;
     color: #cecece;
+
+    &:hover {
+      color: #056d3a;
+    }
   }
 }
