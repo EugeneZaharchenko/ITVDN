@@ -9,11 +9,19 @@
     font-family: $ff-main-bold;
     font-size: 4rem;
     line-height: 2;
+
+    @media (max-width: 600px) {
+      font-size: 3rem;
+    }
   }
 
   &__title {
     margin-top: 0;
     margin-bottom: 25px;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 17vh 0 25vh;
   }
 
   .button--text-uppercase {

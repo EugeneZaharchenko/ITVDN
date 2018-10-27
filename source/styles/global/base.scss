@@ -1,5 +1,4 @@
 body {
-  //background: red;
   font-family: $ff-main;
   font-size: 1rem;
   line-height: 1.2;
@@ -7,6 +6,10 @@ body {
 
 html {
   box-sizing: border-box;
+
+  @media (max-width: 760px) {
+    font-size: 14px;
+  }
 }
 
 *, *:before, *:after {

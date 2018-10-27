@@ -3,9 +3,17 @@
   color: #f99c22;
   background-color: white;
 
+  @media (max-width: 1000px) {
+    padding: 5vh 0;
+  }
+
   .title {
     margin-bottom: 12px;
     margin-top: -30px;
+
+    @media (max-width: 1000px) {
+      margin-top: 0;
+    }
   }
 
   .title__header {

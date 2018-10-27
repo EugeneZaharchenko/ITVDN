@@ -19,6 +19,10 @@
       color: #454545;
       transition: .5s;
 
+      @media (max-width: 600px) {
+        display: block;
+      }
+
     &:hover,
     &--active {
       color: #004c54;
