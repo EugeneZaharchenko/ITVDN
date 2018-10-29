@@ -97,7 +97,7 @@ gulp.task('watch', function() {
 
 gulp.task('default', gulp.series(
   'clean',
-  gulp.parallel('templates:compile', 'styles:compile','js', 'sprite', 'copy'),
+  gulp.parallel('templates:compile', 'styles:compile', 'js', 'sprite', 'copy'),
   gulp.parallel('watch', 'server')
   )
 );
