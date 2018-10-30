@@ -26,6 +26,7 @@
 
   .btn-down {
     position: relative;
+    padding: 3%;
     margin: auto auto 20px;
     width: 65px;
     height: 65px;
@@ -40,6 +41,7 @@
 
   .arrow-down {
     @include centerer-xy();
+    color: #f99c22;
 
     .fa {
       font-size: 2.5rem;
@@ -71,7 +73,7 @@
   }
 
   &__close-button {
-    visibility: hidden;
+    //visibility: hidden;
     position: absolute;
     right: -16px;
     top: -22px;
