@@ -29,7 +29,7 @@
       text-align: right;
 
       .approach__text {
-        padding: 70px 90px;
+        padding: 5% 90px 0;
 
         @media (max-width: 832px) {
           margin-top: -2%;
@@ -81,7 +81,7 @@
     display: inline-block;
     vertical-align: top;
     width: 64%;
-    padding: 70px 70px 55px 90px;
+    padding: 6% 70px 0 90px;
     font-size: 0.92rem;
 
     @media (max-width: 1000px) {
@@ -97,7 +97,7 @@
       padding-left: 14%;
     }
 
-    @media (max-width: 792px) {
+    @media (max-width: 796px) {
       margin: -40px -5%;
       padding-left: 15%;
     }
@@ -182,6 +182,10 @@
 .title--with--line {
   @media (max-width: 874px) {
     margin: 2% 0;
+  }
+
+  @media (max-width: 796px) {
+    margin: -4% 5%;
   }
 
   h2.title__header {
