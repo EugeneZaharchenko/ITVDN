@@ -1,6 +1,7 @@
 (function() {
     var me = {};
     var form = document.querySelector('.form-container');
+    var openButton = document.querySelector('.btn-down')
     var closeButton = null;
 
     function onClose() {
@@ -10,13 +11,15 @@
 
     me.open = function() {
         form.classList.remove('is-hidden');
-
+        // openButton.classList.remove("btn-down");
+        openButton.classList.toggle("colorOnOpen");
         closeButton = document.querySelector('.form__close-button');
         closeButton.addEventListener('click', onClose)
     };
 
     me.close = function() {
         form.classList.add('is-hidden');
+        // openButton.classList.add("btn-down");
     };
 
     me.isValid = function() {
@@ -25,13 +28,13 @@
         var numberValue = document.querySelector('[data-number]').value;
 
         if (!me.isAllCompleted(requiredFields)) {
-            console.log('Заполните пожалуйста все необходимые поля');
+            alert('Заполните пожалуйста все необходимые поля');
             return false;
         } else if (!ITVDN.validation.isEmail(emailValue)) {
-            console.log('Не верный email');
+            alert('Неверно введен email');
             return false;
         } else if (!ITVDN.validation.isNumber(numberValue)) {
-            console.log('Не верный номер');
+            alert('Неверно введен номер');
             return false;
         }
 

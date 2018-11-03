@@ -7,12 +7,21 @@
     padding: 5vh 0;
   }
 
+  .mob {
+    @media (max-width: 874px) {
+      display: none;
+    }
+  }
   .title {
     margin-bottom: 12px;
     margin-top: -30px;
 
     @media (max-width: 1000px) {
       margin-top: 0;
+    }
+
+    @media (max-width: 874px) {
+      margin: 0px -3%;
     }
   }
 
@@ -36,6 +45,13 @@
     &:hover {
       transform: scale(1.15,1.15);
       transition: transform .3s ease-in-out .2s;
+    }
+
+    @media (max-width: 874px) {
+      padding: 2%;
+      margin: 3% auto 15px;
+      width: 40px;
+      height: 40px;
     }
   }
 
@@ -61,6 +77,11 @@
 
   &-container {
     padding-top: 30px;
+    margin-bottom: -100px;
+
+    @media (max-width: 1000px) {
+      margin-bottom: -2%;
+    }
   }
 
   &:before {
@@ -73,7 +94,6 @@
   }
 
   &__close-button {
-    //visibility: hidden;
     position: absolute;
     right: -16px;
     top: -22px;
@@ -90,16 +110,31 @@
     &:hover {
       background: lighten(#f99c22, 20%);
     }
+
+    @media (max-width: 874px) {
+      right: -16px;
+      top: -22px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__text {
     margin-bottom: 33px;
     font-size: 0.9375rem;
     line-height: 1.5;
+
+    @media (max-width: 1000px) {
+      margin: -50px 0 -10%;
+    }
   }
 
   &__fields {
     margin-bottom: 36px;
+
+    @media (max-width: 1000px) {
+      margin: 10% 0 2%;
+    }
   }
 
   &__input {
@@ -114,6 +149,10 @@
     &:focus {
       box-shadow: 0 0 8px 1px rgba(0,0,0,0.5);
     }
+  }
+
+  .colorOnOpen {
+    background: #056d3a;
   }
 
   .button {

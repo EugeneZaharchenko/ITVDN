@@ -10,11 +10,11 @@ section.form-section
             form(method="post" action="#").form
                 button(type="button").form__close-button x
                 .form__text.
-                    Оставьте Ваши данные и мы бесплатно сделаем пробную версию Вашего сайта
+                    Оставьте Ваши данные <span class='mob'> и мы бесплатно сделаем пробную версию Вашего сайта </span>
 
                 .form__fields
-                    input.form__input(type="text" placeholder="Ваше имя")
-                    input.form__input(type="text" placeholder="Контактный номер")
-                    input.form__input(type="text" placeholder="Имя")
+                    input.form__input(type="text" placeholder="Ваше имя" data-valid="required")
+                    input.form__input(type="email" placeholder="Email" data-valid="required" data-email)
+                    input.form__input(type="text" placeholder="Контактный номер" data-valid="required" data-number)
 
                 button(type="submit").button.button--text-uppercase Подать заявку
