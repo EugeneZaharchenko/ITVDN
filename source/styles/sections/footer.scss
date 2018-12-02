@@ -74,6 +74,24 @@
     }
   }
 
+  button#top {
+    position: fixed;
+    right: -376px;
+    transform: scale(0.1, 0.1);
+    bottom: -170px;
+    opacity: .3;
+
+    @media (max-width: 874px) {
+      transform: scale(0.05, 0.05);
+    }
+
+    @media (max-width: 600px) {
+      transform: scale(0.04, 0.04);
+      right: -400px;
+    }
+
+  }
+
   &__copy {
     font-size: 0.875rem;
     color: #cecece;
@@ -82,4 +100,5 @@
       color: #056d3a;
     }
   }
+
 }

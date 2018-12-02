@@ -35,4 +35,37 @@
         });
     }
 
+    window.onload = function () {
+        var scrolled;
+        var timer;
+        document.getElementById('top').style.visibility = 'hidden';
+
+        document.getElementById('top').onclick = function(){
+            scrolled = window.pageYOffset;
+            scrollToTop();
+        }
+
+        function scrollToTop(){
+            if (scrolled > 0) {
+                window.scrollTo(0, scrolled);
+                scrolled = scrolled - 180; //100 - скорость прокрутки
+                timer = setTimeout(scrollToTop, 200);
+            }
+            else {
+                clearTimeout(timer);
+                window.scrollTo(0,0);
+            }
+        }
+    }
+
+    var prevScrollpos = 1074;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("top").style.visibility = "hidden";
+        } else {
+            document.getElementById("top").style.visibility = "visible";
+        }
+    }
+
 }());
