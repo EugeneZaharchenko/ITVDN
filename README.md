@@ -16,7 +16,7 @@
 
 > npm install gulpjs/gulp-cli#4.0 -g
 
-## Инструкция для старта проекта:
+## Инструкция:
 > git clone https://github.com/sergeyamator/itvdn-landing.git 
 
 * Запустить команду npm install в терминале. Данная команда установит все пакеты, которые указанны в файле 
